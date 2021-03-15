@@ -1,9 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-.container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-}
 ul{
     margin: 0;
     padding: 0;
@@ -12,4 +7,19 @@ ul{
 li{
     display: inline-block;
     margin: 0 20px 0 0;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: blue;
+}
+.text-center{
+    text-align: center;
+}
+.bg{
+    background-color: #eee;
+    border: solid 1px #ccc;
+    padding: 30px;
+    margin: 25px;
+    border-radius: 10px;
 }
