@@ -15,11 +15,27 @@ export class LoginComponent implements OnInit {
     1004: { acno: 1004, name: "userfive", balance: 9000, password: "user5" }
 }
 
+  uname= " ";
+  pwd= " ";
+  name = "Robin Joseph"
+  test = "Placeholder"
+
+  getuname(event:any){
+    this.uname=event.target.value;
+    // console.log(this.uname)
+  }
+  getpwd(event:any){
+    this.pwd=event.target.value;
+    // console.log(this.pwd)
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
   login(){
+    // var acno = a.value;
+    // var pwd = b.value;
     alert("Login Works")
   }
 }
