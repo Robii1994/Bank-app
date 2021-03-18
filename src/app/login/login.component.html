@@ -3,25 +3,26 @@
         <div class="row">
             <div class="col-12 text-center"><h1>Welcome Sbk</h1></div>
             <p>Name: {{name}}</p>
-            <p>Username: {{uname}}</p>
-            <p>Password: {{pwd}}</p>
+            <p>User: {{usrname}}</p>
+            <!-- <p>Account Number: {{accno}}</p> -->
         </div>
-    
+        
         <form>
             <div class="mb-3">
-                <label for="uname" class="form-label" >Username</label>
-                <input value="test" placeholder="Enter Username"  type="text" (change)="getuname($event)" class="form-control" id="uname">
+                <label class="form-label">Account Number</label>
+                <!-- <input placeholder="Account Number"  type="text" (change)="getaccno($event)" class="form-control"> -->
+                <input placeholder="Account Number"  type="text" [(ngModel)]="accno"  name="accno" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="pwd" class="form-label">Password</label>
-                <input placeholder="Enter Password" type="password" (change)="getpwd($event)" class="form-control" id="pwd">
+                <label class="form-label">Password</label>
+                <input placeholder="Enter Password" type="password" [(ngModel)]="pwd" name="pwd" class="form-control" >
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
             <div class="text-center">
-                <button type="button" (click)="login()" class="btn btn-primary">Submit</button>
+                <button type="button" (click)="login()" class="btn btn-primary">Submit</button> &nbsp;
                 <a routerLink="register">Register</a>
             </div>
         </form>
